@@ -1,0 +1,26 @@
+using System;
+
+namespace P_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double h;
+            double S;
+
+            Console.WriteLine("Введите основание а: ");
+            float a = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Введите основание b: ");
+            float b = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Введите основание x: ");
+            float x = Convert.ToSingle(Console.ReadLine());
+
+
+            h = ((a + b) / 2) * Math.Tan(x);
+            S = ((a + b) / 2) * h;
+
+            Console.WriteLine("Площадь равна: " + S);
+        }
+    }
+}
