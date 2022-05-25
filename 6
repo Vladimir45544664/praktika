@@ -1,0 +1,21 @@
+using System;
+
+namespace P_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            for (int i = 100; i <= 999; i++)
+            {
+                int n = i;
+
+                if ((n % 47 == 43) || (n % 43 == 47))
+                {
+                    Console.WriteLine(n);
+                }
+            }
+        }
+    }
+}
