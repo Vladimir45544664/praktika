@@ -1,0 +1,22 @@
+using System;
+
+namespace P_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double S;
+            Console.WriteLine("Введите число A:");
+            int A = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите число B:");
+            int B = int.Parse(Console.ReadLine());
+
+            for (int a = A; a <= B; a++)
+            {
+                S = a * a * a;
+                Console.WriteLine("Кубы чисел равны:" + S);
+            }
+        }
+    }
+}
