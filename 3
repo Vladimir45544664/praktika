@@ -1,0 +1,27 @@
+using System;
+
+namespace P_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число n");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] a = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                a[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int S = 0;
+            int P = 1;
+            for (int i = 0; i < n; i++)
+            {
+                S = S + a[i];
+                P = P * a[i];
+            }
+            Console.WriteLine("Сумма равна:" + S);
+            Console.WriteLine("Произведение равно:" + P);
+        }
+    }
+}
